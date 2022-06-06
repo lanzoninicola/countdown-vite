@@ -11,27 +11,32 @@ import Time from "./components/editor/properties/time/time";
 import Timezone from "./components/editor/properties/timezone/timezone";
 import FakeWrapper from "./FakeWrapper";
 import GoogleFontPicker from "./components/editor/properties/font-picker/font-picker";
+import MainContent from "./components/editor/layout/main-content/main-content";
+import FontSizeSlider from "./components/editor/properties/font-size-slider/font-size-slider";
 
 function App() {
   return (
     <FakeWrapper>
-      <Box>
-        <Text>This is the Header</Text>
-      </Box>
-      <Flex flexDirection={"column"}>
-        <PropertyGroupWrapper>
-          <GroupTitle>Target Date</GroupTitle>
-          <TargetDate />
-          <Time />
-          <Timezone />
-        </PropertyGroupWrapper>
-        <Divider marginBlock={".5rem"} />
-        <PropertyGroupWrapper>
-          <GroupTitle>Text</GroupTitle>
-          <CountdownTitle />
-          <GoogleFontPicker />
-        </PropertyGroupWrapper>
-      </Flex>
+      <MainContent>
+        <Box>
+          <Text>This is the Header</Text>
+        </Box>
+        <Flex flexDirection={"column"}>
+          <PropertyGroupWrapper>
+            <GroupTitle>Target Date</GroupTitle>
+            <TargetDate />
+            <Time />
+            <Timezone />
+          </PropertyGroupWrapper>
+          <Divider marginBlock={".5rem"} />
+          <PropertyGroupWrapper>
+            <GroupTitle>Text</GroupTitle>
+            <CountdownTitle />
+            <GoogleFontPicker />
+            <FontSizeSlider />
+          </PropertyGroupWrapper>
+        </Flex>
+      </MainContent>
     </FakeWrapper>
   );
 }

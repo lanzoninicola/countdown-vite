@@ -23,7 +23,7 @@ export default function FontSelectorDialog({
 }: FontSelectorDialogProps) {
   return (
     <Flex
-      id="font-selector-dialog"
+      className="font-selector-dialog"
       role="dialog"
       flexDirection={"column"}
       borderRadius={"lg"}
@@ -35,6 +35,7 @@ export default function FontSelectorDialog({
       left={callerPosition.left}
       maxH="350px"
       bg="white"
+      zIndex={99}
     >
       <HStack gap={1}>
         <FontList onFontSelected={onFontSelected} />

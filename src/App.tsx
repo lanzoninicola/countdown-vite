@@ -5,14 +5,16 @@ import { Box, Divider, Flex, Text } from "@chakra-ui/react";
 
 import GroupTitle from "./components/editor/layout/group-title/group-title";
 import PropertyGroupWrapper from "./components/editor/layout/property-group-wrapper/property-group-wrapper";
-import CountdownTitle from "./components/editor/properties/countdown-name/countdown-title";
+import CountdownTitle from "./components/editor/properties/title/countdown-title/countdown-title";
 import TargetDate from "./components/editor/properties/target-date/target-date";
 import Time from "./components/editor/properties/time/time";
 import Timezone from "./components/editor/properties/timezone/timezone";
 import FakeWrapper from "./FakeWrapper";
-import GoogleFontPicker from "./components/editor/properties/font-picker/font-picker";
+import GoogleFontPicker from "./components/editor/properties/title/title-font-picker/title-font-picker";
 import MainContent from "./components/editor/layout/main-content/main-content";
-import FontSizeSlider from "./components/editor/properties/font-size-slider/font-size-slider";
+import TitleFontSizePicker from "./components/editor/properties/title/title-font-size-picker/title-font-size-picker";
+import TitleFontPicker from "./components/editor/properties/title/title-font-picker/title-font-picker";
+import TitleColorPicker from "./components/editor/properties/title/title-color-picker/title-color-picker";
 
 function App() {
   return (
@@ -30,10 +32,15 @@ function App() {
           </PropertyGroupWrapper>
           <Divider marginBlock={".5rem"} />
           <PropertyGroupWrapper>
-            <GroupTitle>Text</GroupTitle>
+            <GroupTitle>Title Style</GroupTitle>
             <CountdownTitle />
-            <GoogleFontPicker />
-            <FontSizeSlider />
+            <TitleFontPicker />
+            <TitleFontSizePicker />
+            <TitleColorPicker />
+          </PropertyGroupWrapper>
+          <Divider marginBlock={".5rem"} />
+          <PropertyGroupWrapper>
+            <GroupTitle>Countdown Style</GroupTitle>
           </PropertyGroupWrapper>
         </Flex>
       </MainContent>

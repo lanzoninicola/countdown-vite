@@ -1,11 +1,11 @@
 import { Input } from "@chakra-ui/react";
-import PropertyWrapper from "../../layout/property-wrapper/property-wrapper";
-import Label from "../../primitives/label/label";
+import PropertyWrapper from "../../../layout/property-wrapper/property-wrapper";
+import Label from "../../../primitives/label/label";
 
 export default function CountdownTitle() {
   return (
     <PropertyWrapper>
-      <Label>Countdown Title</Label>
+      <Label>Text</Label>
       <Input
         size={"xs"}
         type="text"

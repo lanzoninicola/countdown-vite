@@ -1,10 +1,10 @@
 import { Box } from "@chakra-ui/react";
 import { useState } from "react";
-import SliderMarkTemplate from "../../../shared/slider-mark-template/slider-mark-template";
-import PropertyWrapper from "../../layout/property-wrapper/property-wrapper";
-import Label from "../../primitives/label/label";
+import SliderMarkTemplate from "../../../../shared/slider-mark-template/slider-mark-template";
+import PropertyWrapper from "../../../layout/property-wrapper/property-wrapper";
+import Label from "../../../primitives/label/label";
 
-export default function FontSizeSlider() {
+export default function TitleFontSizePicker() {
   const initialSize = 16;
   const [fontSize, setFontSize] = useState(initialSize);
 
